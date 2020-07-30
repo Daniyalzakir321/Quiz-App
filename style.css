@@ -1,0 +1,190 @@
+
+body{
+  /* background: linear-gradient(to right, rgb(124, 134, 226),rgb(81, 98, 248),rgb(124, 134, 226));  */
+  background-color: #fafafa;
+}
+
+h1{
+  font-family: Ubuntu;
+  text-align: center;
+  color: white;
+  text-shadow:1px 1px 3px black;
+  background: linear-gradient(to right, rgb(113, 124, 228),rgb(71, 89, 252),rgb(113, 124, 228)); 
+  height: 70px;
+  padding-top: 10px;
+}
+
+#avatar{
+height: 40px;
+border-radius: 20px;
+border: 2px solid white;
+position: relative;
+right: 18px;
+top: -62px;
+cursor: pointer;
+}
+#hover{
+  box-shadow: 0px 0px 50px whitesmoke;
+}
+
+.p-2{
+ margin: 5px 0px !important; 
+ border-bottom: 1px solid #e9e9e9;
+ 
+}
+.p-2:hover{
+  background-color: rgb(113, 124, 228);
+  cursor: pointer;
+color: white;
+}
+
+.card-body{
+  padding: 20px 7px !important;
+}
+
+.card{
+  padding:0px -20px !important;
+}
+
+.card-header{
+  border: 1px solid rgb(224, 224, 224);
+  margin: 0px -15px !important;
+  background-color: rgb(142, 151, 233) !important;
+  color: white;
+}
+
+.ch2{
+  padding-top: 6px;
+  padding-bottom: 6px ;
+}
+
+a{ 
+  background-color: white !important; 
+  color: black !important; 
+  border-radius: 10px; 
+  padding: 2px 20px !important;
+}
+
+a:hover{
+  box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.active{
+  background-color: rgb(113, 124, 228);
+  color: white;
+
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(Fonts/Ubuntu-Bold.ttf);
+}
+
+
+@media only screen and (max-width: 600px) {
+h1{
+  font-size: 30px !important;
+  height: 60px !important;
+}
+#avatar,#login{
+  visibility: hidden;
+}
+.p-2{
+  border-bottom: 1px solid #d6d6d6;
+}
+}
+
+
+/* Main Html*/
+#body{
+  background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
+  text-align: center !important;
+}
+#heading{
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: Ubuntu;
+  color: white;
+  text-shadow:1.5px 1.5px 3px black;
+  background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
+  padding-top: 100px;
+  cursor: text;
+}
+#heading>span{
+  font-size: 57px;
+}
+
+#input{
+text-align: center !important;
+border-radius: 30px !important;
+height: 50px;
+width: 300px;
+box-shadow: 3px 3px 5px solid gray;
+font-size: 20px;
+text-transform: capitalize;
+border: 1.5px solid black;
+margin-top: 15px !important;
+margin: auto;
+
+}
+#input:hover{
+box-shadow: 1px 1px 10px solid whitesmoke !important;
+}
+
+#input:focus{
+box-shadow: 0px 0px 10px solid whitesmoke !important;
+}
+
+#btn{
+border: 1.5px solid black;
+margin-top: 18px;
+text-align: center;
+border-radius: 30px;
+height: 45px;
+width: 150px;
+background-color: white;
+box-shadow: 3px 3px 5px solid gray;
+font-size: 20px;
+font-family: Ubuntu;
+}
+
+#btn:hover{
+box-shadow: 10px 10px 10px solid whitesmoke !important;
+}
+
+@media only screen and (max-width: 800px) {
+  #heading{
+  padding-top: 70px;
+    font-size: 47px !important;
+  }
+   
+  #heading>span{
+    font-size: 47px;
+  }
+
+  #input{
+    font-size: 18px;
+  }
+
+
+  }
+
+
+
+
+
+  /* Result Html*/
+  #headingresult{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    color: white;
+    text-shadow:1.5px 1.5px 3px black;
+  background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
+  padding-top: 150px;
+  cursor: text;
+  }
+
+  #headingresult>span{
+    font-size: 100px;
+  }
