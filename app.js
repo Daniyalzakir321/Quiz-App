@@ -1,5 +1,4 @@
-questionsArray = [{
-},
+questionsArray = [
 {
 
     question: "Q1. Who is the inventor of Facebook?",
@@ -39,8 +38,7 @@ questionsArray = [{
     options: ["World Wide Web", "Whole World Web", "Webd Wide World", "Nonve of them"]
 
 
-},
-{} ]
+} ]
 
 
 function quizStarted(){
@@ -104,32 +102,36 @@ sweetAlertSuccessMsg("You are LogIn")
 }
 
 
-
-// Next Question
 var count=0
-// Question.innerHTML=questionsArray[1].question
-function nextQuestion(){
+function nextQuestionCount(){
 count++ 
+nextQuestion(count)
+score(count)
+
+}
+
+
+function nextQuestion(e){
+// Submit Quiz
+if([e]==5){
+sweetAlertSuccessMsg("Submitting Quiz")
+location.replace("result.html") 
+}
 
 // Questions
 var Question= document.getElementById("question");
-Question.innerHTML=questionsArray[count].question;
+Question.innerHTML=questionsArray[e].question;
 
 // Answers
 var Options= document.getElementsByClassName("p-2")
-var orderList=1
 for(var i=0; i<Options.length; i++){
-Options[i].innerHTML=orderList++ +". "+questionsArray[count].options[i]
+Options[i].innerHTML=[i+1] +". "+questionsArray[e].options[i]
 }
 
-// if(questionsArray[5]==null){
-// alert("SUBMIT")
-// }
+// Question 5/5
+var questionCount= document.getElementById("questionCount");
+questionCount.innerHTML=e+1
 
-var active= document.getElementsByClassName("active")
-// if(active.innerHTML==questionsArray[count].answer){
-console(active)
-// }
 removeClassActive()
 }
 
@@ -163,23 +165,38 @@ document.getElementById("name").innerHTML ="Hello! "+ localStorage.getItem("ls")
 
 
 /* Result Html*/
-function score(){
-    var score= document.getElementById("score")
-    score.innerHTML=8
-    if(score>=4 && score<=10){
-    sweetAlertSuccessMsg("Congratulations! You Are Pass")
-    }
-    else{
-    sweetAlertSuccessMsg("Sorry! You are Fail")
-    }
+var score= 0
+// var score= document.getElementById("score")
+function score(e){
+    var sco= document.getElementById("score")
+   
+    // var active= document.getElementsByClassName("active")
+    if(active[0].innerHTML==questionsArray[e].answer){
+        sco.innerHTML= "aa"
+        // score +=2
+    // localStorage.setItem("sc", score.value);
+    // break
+
+    // if(score>=4 && score<=10){
+    // sweetAlertSuccessMsg("Congratulations! You Are Pass")
+    // }
+    // else{
+    // sweetAlertSuccessMsg("Sorry! You are Fail")
+    // }
+ }
 }
-score()
+// document.getElementById("score").innerHTML =localStorage.getItem("sc");
 
 
 
 
+function logOut(){
+    location.replace("index.html") 
+}
 
-// sweetAlertSuccessMsg("Quiz Submitted Successfully")
+
+
+ 
 // Sweet Alert Library
 function sweetAlertSuccessMsg(msg){
     const Toast = Swal.mixin({

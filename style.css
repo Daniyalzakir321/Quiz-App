@@ -1,6 +1,6 @@
 
+/* Main Html*/
 body{
-  /* background: linear-gradient(to right, rgb(124, 134, 226),rgb(81, 98, 248),rgb(124, 134, 226));  */
   background-color: #fafafa;
 }
 
@@ -43,7 +43,8 @@ color: white;
 }
 
 .card{
-  padding:0px -20px !important;
+  margin-top: 15px;
+  padding: 0px -20px !important;
 }
 
 .card-header{
@@ -72,7 +73,12 @@ a:hover{
 .active{
   background-color: rgb(113, 124, 228);
   color: white;
+}
 
+.text-center{
+
+position: relative;
+top: 3px;
 }
 
 @font-face {
@@ -95,7 +101,7 @@ h1{
 }
 
 
-/* Main Html*/
+/* Index Html*/
 #body{
   background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
   text-align: center !important;
@@ -123,7 +129,7 @@ box-shadow: 3px 3px 5px solid gray;
 font-size: 20px;
 text-transform: capitalize;
 border: 1.5px solid black;
-margin-top: 15px !important;
+margin-top: 15px;
 margin: auto;
 
 }
@@ -153,8 +159,8 @@ box-shadow: 10px 10px 10px solid whitesmoke !important;
 }
 
 @media only screen and (max-width: 800px) {
-  #heading{
-  padding-top: 70px;
+   #heading{
+    padding-top: 60px !important;
     font-size: 47px !important;
   }
    
@@ -166,6 +172,9 @@ box-shadow: 10px 10px 10px solid whitesmoke !important;
     font-size: 18px;
   }
 
+  #btn{
+    margin-top: 8.5px !important;
+  }
 
   }
 
@@ -187,4 +196,32 @@ box-shadow: 10px 10px 10px solid whitesmoke !important;
 
   #headingresult>span{
     font-size: 100px;
+  }
+
+  #logout{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 18px;
+  }
+  #logout:hover{
+    box-shadow: 0px 0px 20px whitesmoke;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #headingresult{
+  padding-top: 165px;
+
+    }
+    
+    #logout{
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      height: 30px;
+      cursor: pointer;
+      border-radius: 18px;
+    }
   }

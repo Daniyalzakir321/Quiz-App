@@ -9,14 +9,10 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Images/favicon-icon.jpg">
-    <title>QUIZ APP</title>
+    <title>QUIZZER APP</title>
   </head>
-<body onload="quizStarted()">
+<body onload="quizStarted(),nextQuestion(0)">
     
-
-
-
-
 
 <div>
 <h1>WELCOME TO QUIZZER</h1>
@@ -27,19 +23,20 @@
 
 <div class="card-header">
     <div class="d-inline-block" id="name">Hello! </div>
-    <div class="float-right"><span id="min">00</span>:<span id="sec">00</span></div>
+    <div class="float-right">Time : <span id="min">00</span>:<span id="sec">00</span></div>
 </div>
 
   <div class="card-body">
-<h5 class="card-title pb-3" id="question">Q0. Who is Mark urg?</h5>
-<p class="card-text p-2"  onclick="addClassActive(this)">Founder of Tesla</p>
-<p class="card-text p-2"  onclick="addClassActive(this)">Founder of Facebook</p>
-<p class="card-text p-2"  onclick="addClassActive(this)">Founder of JavaScript</p>
-<p class="card-text p-2"  onclick="addClassActive(this)">Founder of Linux</p>
+<h5 class="card-title pb-3" id="question">Question</h5>
+<p class="card-text p-2"  onclick="addClassActive(this)">Option 1</p>
+<p class="card-text p-2"  onclick="addClassActive(this)">Option 2</p>
+<p class="card-text p-2"  onclick="addClassActive(this)">Option 3</p>
+<p class="card-text p-2"  onclick="addClassActive(this)">Option 4</p>
 </div>
 
 <div class="card-header ch2">
-  <a href="#" class="btn btn-dark float-right" onclick="nextQuestion()">Next</a>
+  <div class="d-inline-block text-center">Question : <span id="questionCount">1</span>/5</div>
+  <a href="#" class="btn btn-dark float-right" id="nextQuestion" onclick="nextQuestionCount()">Next</a>
 </div>  
 
 </div>
