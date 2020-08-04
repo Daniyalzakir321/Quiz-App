@@ -1,107 +1,4 @@
-
-/* Main Html*/
-body{
-  background-color: #fafafa;
-}
-
-h1{
-  font-family: Ubuntu;
-  text-align: center;
-  color: white;
-  text-shadow:1px 1px 3px black;
-  background: linear-gradient(to right, rgb(113, 124, 228),rgb(71, 89, 252),rgb(113, 124, 228)); 
-  height: 70px;
-  padding-top: 10px;
-}
-
-#avatar{
-height: 40px;
-border-radius: 20px;
-border: 2px solid white;
-position: relative;
-right: 18px;
-top: -62px;
-cursor: pointer;
-}
-#hover{
-  box-shadow: 0px 0px 50px whitesmoke;
-}
-
-.p-2{
- margin: 5px 0px !important; 
- border-bottom: 1px solid #e9e9e9;
- 
-}
-.p-2:hover{
-  background-color: rgb(113, 124, 228);
-  cursor: pointer;
-color: white;
-}
-
-.card-body{
-  padding: 20px 7px !important;
-}
-
-.card{
-  margin-top: 15px;
-  padding: 0px -20px !important;
-}
-
-.card-header{
-  border: 1px solid rgb(224, 224, 224);
-  margin: 0px -15px !important;
-  background-color: rgb(142, 151, 233) !important;
-  color: white;
-}
-
-.ch2{
-  padding-top: 6px;
-  padding-bottom: 6px ;
-}
-
-a{ 
-  background-color: white !important; 
-  color: black !important; 
-  border-radius: 10px; 
-  padding: 2px 20px !important;
-}
-
-a:hover{
-  box-shadow: 0px 0px 10px whitesmoke;
-}
-
-.active{
-  background-color: rgb(113, 124, 228);
-  color: white;
-}
-
-.text-center{
-
-position: relative;
-top: 3px;
-}
-
-@font-face {
-  font-family: Ubuntu;
-  src: url(Fonts/Ubuntu-Bold.ttf);
-}
-
-
-@media only screen and (max-width: 600px) {
-h1{
-  font-size: 30px !important;
-  height: 60px !important;
-}
-#avatar,#login{
-  visibility: hidden;
-}
-.p-2{
-  border-bottom: 1px solid #d6d6d6;
-}
-}
-
-
-/* Index Html*/
+/* =============== Index Html =============== */
 #body{
   background: linear-gradient(to right, rgb(113, 124, 228),rgb(58, 77, 248),rgb(113, 124, 228)); 
   text-align: center !important;
@@ -180,9 +77,115 @@ box-shadow: 10px 10px 10px solid whitesmoke !important;
 
 
 
+  
+/* =============== Main Html ============*/
+body{
+  background-color: #fafafa;
+}
+
+h1{
+  font-family: Ubuntu;
+  text-align: center;
+  color: white;
+  text-shadow:1px 1px 3px black;
+  background: linear-gradient(to right, rgb(113, 124, 228),rgb(71, 89, 252),rgb(113, 124, 228)); 
+  height: 70px;
+  padding-top: 10px;
+}
+
+#avatar{
+height: 40px;
+border-radius: 20px;
+border: 2px solid white;
+position: relative;
+right: 18px;
+top: -62px;
+cursor: pointer;
+}
+#hover{
+  box-shadow: 0px 0px 50px whitesmoke;
+}
+
+#name,.swal-modal{
+  text-transform: capitalize !important;
+}
+
+.p-2{
+ margin: 5px 0px !important; 
+ border-bottom: 1px solid #e9e9e9;
+ 
+}
+.p-2:hover{
+  background-color: rgb(113, 124, 228);
+  cursor: pointer;
+color: white;
+}
+
+.card-body{
+  padding: 20px 7px !important;
+}
+
+.card{
+  margin-top: 15px;
+  padding: 0px -20px !important;
+}
+
+.card-header{
+  border: 1px solid rgb(224, 224, 224);
+  margin: 0px -15px !important;
+  background-color: rgb(142, 151, 233) !important;
+  color: white;
+}
+
+.ch2{
+  padding-top: 6px;
+  padding-bottom: 6px ;
+}
+
+a{ 
+  background-color: white !important; 
+  color: black !important; 
+  border-radius: 10px; 
+  padding: 2px 20px !important;
+}
+
+a:hover{
+  box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.active{
+  background-color: rgb(113, 124, 228);
+  color: white;
+}
+
+.text-center{
+
+position: relative;
+top: 3px;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(Fonts/Ubuntu-Bold.ttf);
+}
 
 
-  /* Result Html*/
+@media only screen and (max-width: 600px) {
+h1{
+  font-size: 30px !important;
+  height: 60px !important;
+}
+#avatar,#login{
+  visibility: hidden;
+}
+.p-2{
+  border-bottom: 1px solid #d6d6d6;
+}
+}
+
+
+
+  /* ============ Result Html ===========*/
   #headingresult{
     font-size: 30px;
     text-transform: uppercase;

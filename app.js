@@ -43,6 +43,7 @@ questionsArray = [
 /*=============== Index Html ============*/
 function inp(){
 var input= document.getElementById("input")
+input.style.textTransform = "Capitalize";
 if(input.value==""){
 Swal.fire("Please Enter Your Name <br> To Start Quiz")
 }
@@ -109,7 +110,7 @@ active[i].classList.remove("active") }
 
 // LogIn Avatar
 function login(){
-sweetAlertSuccessMsg("You are LogIn")
+sweetAlertSuccessMsg("You are LogIn as <br>"+localStorage.getItem("ls"))
 }
 // LogOut
 function logOut(){
@@ -183,9 +184,9 @@ console.log( active[0].innerHTML)
 console.log(questionsArray[e].answer)
 localStorage.setItem("result", sc);
 }
-else{
+// else{
 console.log("**** ")
-}
+// }
 console.log("C: "+ sc)
 console.log("A: "+ active[0].innerHTML)
 console.log("B: "+questionsArray[e].answer)
@@ -200,10 +201,10 @@ result=localStorage.getItem("result")
 score.innerHTML=result
 
 if(result>=4){
-sweetAlertSuccessMsg("Congratulations! You Are Pass")
+sweetAlertSuccessMsg("Congratulations! "+localStorage.getItem("ls")+"<br> You Are Pass")
 }
 else{
-sweetAlertSuccessMsg("Sorry! You are Fail")
+sweetAlertSuccessMsg("Sorry! "+localStorage.getItem("ls")+"<br> You Are Fail")
 }
 }
 
