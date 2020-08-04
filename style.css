@@ -106,7 +106,7 @@ cursor: pointer;
   box-shadow: 0px 0px 50px whitesmoke;
 }
 
-#name,.swal-modal{
+#name{
   text-transform: capitalize !important;
 }
 

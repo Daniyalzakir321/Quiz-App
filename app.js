@@ -220,7 +220,7 @@ function sweetAlertSuccessMsg(msg){
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
-    timer: 3000,
+    timer: 4000,
     timerProgressBar: true,
     onOpen: (toast) => {
     toast.addEventListener('mouseenter', Swal.stopTimer)
