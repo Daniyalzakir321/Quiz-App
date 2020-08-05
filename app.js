@@ -108,6 +108,7 @@ active[i].classList.remove("active") }
 
 
 
+
 // LogIn Avatar
 function login(){
 sweetAlertSuccessMsg("You are LogIn as <br>"+localStorage.getItem("ls"))
@@ -134,8 +135,6 @@ Swal.fire("Please Select An Option")
 }
 else{
 count++ 
-// nextQuestion
-nextQuestion(count)
 // Scores
 scores(count)
 // Remove Class Active
@@ -157,7 +156,6 @@ var Options= document.getElementsByClassName("p-2")
 for(var i=0; i<Options.length; i++){
 Options[i].innerHTML=questionsArray[e].options[i] 
 }
-// removeClassActive()
 // Question Count 5/5
 var questionCount= document.getElementById("questionCount")
 questionCount.innerHTML=e+1
@@ -173,28 +171,17 @@ questionCount.innerHTML=e+1
 /*================ Result Html ==============*/
 var sc= 0
 function scores(e){
-  
 var active= document.getElementsByClassName("active")
-if(active[0].innerHTML==questionsArray[e].answer){
+if(active[0].innerHTML==questionsArray[e-1].answer){
 sc+=2
-
-console.log(e)
-console.log(sc)
-console.log( active[0].innerHTML)
-console.log(questionsArray[e].answer)
 localStorage.setItem("result", sc);
 }
-// else{
-console.log("**** ")
-// }
-console.log("C: "+ sc)
-console.log("A: "+ active[0].innerHTML)
-console.log("B: "+questionsArray[e].answer)
-console.log("**** ")
+// Next Question
+nextQuestion(e)
 }
 
 
-// Result With Local Strorage  
+// Result Function With Local Strorage  
 function result(){
 var score= document.getElementById("score")
 result=localStorage.getItem("result")
